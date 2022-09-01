@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="home_page_main floating full_w">
+         <div class="left_menu_home">
+             <img src="../images/profile.png">
+             <h3>Elmurad  Həsənov</h3>
+                <button id="btn">Umumi məlumatlar <i class="fa-solid fa-angle-right"></i></button>
+                <button id="btn1">Digər məlumatlar</button>
+                <button class="btn2">Sosial statusu</button>
+                <button class="btn2" >Maaş</button>
+                <button class="btn2">Vəzifə</button>
+                <button class="btn2">Əmək  fəaliyyəti</button>
+                <button class="btn2">Sənədlər</button>
+                <button class="btn2">Təhsil</button>
+                <button class="btn2">Tibbi müayinə</a>
+         </div>
+         <div id="sub_menu_home" class="sub_menu_home_class">
+                 <h2>Salam əziz istifadəçi bütün alt menular burda olacaq</h2>
+        </div>
+    </div>    
+    <script>
+
+$(document).ready(function(){
+    $("#btn").click(function(){
+    $("#sub_menu_home").load("./sub/submenu.html");  
+})
+$("#btn1").click(function(){
+    $("#sub_menu_home").load("./sub/submenuone.html");  
+})
+$(".btn2").click(function(){
+    $("#sub_menu_home").load("./sub/subother.html");  
+})
+});
+    </script>
+</body>
+</html>

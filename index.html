@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="all_main_div full_w floating">
+      <div class="nav_main_div">
+        <input
+          type="text"
+          name="search"
+          id="myInput"
+          value=""
+          class="search_input"
+          placeholder="Axtar..."
+          onkeyup="myFunction()"
+        />
+        <ul class="all_list_ul floating" id="list">
+          <li class="flex_li_main">
+            <a href="#/other" class="nav_main_div_link" id="first"
+              ><i class="fa-solid fa-house"></i><span>Təşkilatı struktur</span>
+              <i class="fa-solid fa-angle-up"></i
+            ></a>
+            <ul class="sub_link_list">
+              <li><a href="#/teskilat">Təşkilatlar</a></li>
+              <li><a href="#/struktur">Struktur bölmələr</a></li>
+              <li><a href="#/stat">Ştat məlumatları</a></li>
+              <li><a href="#/struktur">Ştat cədvəli</a></li>
+            </ul>
+          </li>
+          <li class="flex_li_main">
+            <a class="nav_main_div_link" href="#/other" id="second"
+              ><i class="fa-solid fa-gears"></i>İnsan resursları
+              <i class="fa-solid fa-angle-up"></i
+            ></a>
+            <ul class="sub_link_list_about">
+              <li><a href="#/stat">Əmək müqavilələri</a></li>
+              <li><a href="#/other">Personal siyahısı</a></li>
+              <li><a href="#/struktur">Kadr hesabatı</a></li>
+              <li><a href="#/other">Əmrlər</a></li>
+              <li><a href="#/teskilat">Qeyri iş günü işə cəlb olunanlar</a></li>
+              <li><a href="#/other">Arayışlar</a></li>
+            </ul>
+          </li>
+          <li class="flex_li_main">
+            <a class="nav_main_div_link" href="#/other" id="three"
+              ><i class="fa-solid fa-gears"></i>Özünəxidmət
+              <i class="fa-solid fa-angle-down"></i
+            ></a>
+          </li>
+          <li class="flex_li_main">
+            <a class="nav_main_div_link" href="#/stat" id="three"
+              ><i class="fa-solid fa-border-all"></i>Əməyin təşkili
+              <i class="fa-solid fa-angle-down"></i
+            ></a>
+          </li>
+          <li class="flex_li_main">
+            <a class="nav_main_div_link" href="#/struktur" id="three"
+              ><i class="fa-solid fa-coins"></i>Əməkhaqqı
+              <i class="fa-solid fa-angle-down"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="right_line_main">
+        <div class="header_line_main">
+          <i class="fa-solid fa-bars" id="bar"></i>
+          <div class="flex_div">
+            <img
+              src="./images/profile.png"
+              alt="profile"
+              class="image_profile"
+            />
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+        </div>
+        <div id="main_div"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
